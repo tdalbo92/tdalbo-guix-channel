@@ -1,4 +1,4 @@
-(define-module (benwr packages tailscale)
+(define-module (tdalbo packages tailscale)
 	       #:use-module (guix packages)
          #:use-module (gnu packages linux)
 	       #:use-module (guix gexp)
@@ -9,14 +9,14 @@
 (define-public tailscale
   (package
     (name "tailscale")
-    (version "1.50.1")
+    (version "1.66.0")
     (source (origin
               (method url-fetch/tarbomb)
               (uri (string-append "https://pkgs.tailscale.com/stable/tailscale_" version
                                   "_amd64.tgz"))
               (sha256
                 (base32
-                  "0xmmpx34i9zsb48jg148fqm7xnldi63fdb3xll58y1xm1x46pznr"))))
+                  "0fgl40y8sq5znvzixdv7pymnin6jvcnx1882rj07zlh8aa71nk57"))))
     (build-system copy-build-system)
     (arguments
       (list

@@ -1,11 +1,11 @@
-(define-module (benwr services tailscale)
+(define-module (tdalbo services tailscale)
 	       #:use-module (gnu services)
 	       #:use-module (gnu services shepherd)
 	       #:use-module (gnu services configuration)
 	       #:use-module (guix records)
 	       #:use-module (guix gexp)
 	       #:use-module (ice-9 match)
-	       #:use-module (benwr packages tailscale)
+	       #:use-module (tdalbo packages tailscale)
          #:use-module (gnu packages linux)
 	       #:export (tailscaled-service-type tailscaled-configuration))
 
